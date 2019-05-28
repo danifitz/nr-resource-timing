@@ -9,7 +9,7 @@ Finally, we also capture Asset Budgets. This is the total number and size of all
 
 ## Usage
 
-Add the code in `img-performance-snippet.js` inside a `<script></script>` tag in the `<head>` of your page(s)
+Add the code in `nr-resource-timing-snippet.js` inside a `<script></script>` tag in the `<head>` of your page(s)
 
 First Paint and Asset Budgets are captured as attributes of the `PageView` event in Insights. Individual
 resource timings such as the duration and the size of a specific image are captured as a `PageAction` event.
