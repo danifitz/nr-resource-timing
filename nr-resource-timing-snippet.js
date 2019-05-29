@@ -6,7 +6,8 @@ function getPaintTimings() {
     if (
       !("performance" in window) ||
       !("getEntriesByType" in window.performance) ||
-      !(window.performance.getEntriesByType("paint") instanceof Array)
+      !(window.performance.getEntriesByType("paint") instanceof Array) ||
+      !(typeof newrelic === 'undefined')
     ) {
         consoleLogger(logToConsole, "performance NOT supported by Browser");
     } 
@@ -27,7 +28,7 @@ function getPaintTimings() {
 // Timings get added to the PageAction event type in New Relic Insights
 function getResourceTimings() {
     // let's make sure the agent is present
-    if(newrelic != undefined && typeof newrelic == 'object') {
+    if(typeof newrelic !== 'undefined' && typeof newrelic == 'object') {
         consoleLogger(logToConsole, 'loaded')
         if(
             !("performance" in window) ||
@@ -99,7 +100,8 @@ function getAssetBudgets() {
     if (
       !("performance" in window) ||
       !("getEntriesByType" in window.performance) ||
-      !(window.performance.getEntriesByType("resource") instanceof Array)
+      !(window.performance.getEntriesByType("resource") instanceof Array) ||
+      !(typeof newrelic === 'undefined')
     ) 
     {
       consoleLogger(logToConsole, "performance NOT supported by Browser" );
