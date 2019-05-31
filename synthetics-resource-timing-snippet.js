@@ -7,6 +7,8 @@ $browser.get('https://newrelic.com').then(function(){
     }).then(function(r){
       r.forEach( (performanceEntry, i, entries) => {
         console.log("The time to " + performanceEntry.name + " was " + performanceEntry.startTime + " milliseconds.");
+	// send the paint timings to insights
+	$util.insights.set(performanceEntry.name, performanceEntry.startTime)
       });
     });
   });
