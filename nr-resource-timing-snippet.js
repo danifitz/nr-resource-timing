@@ -49,7 +49,7 @@ function getResourceTimings() {
                     
                     // collect some attributes to send to New Relic (all in Seconds)
                     var attributes = {}
-                    attributes.name = resource.name
+                    attributes.resourceName = resource.name
                     attributes.resourceDuration = resource.duration / 1000
                     attributes.transferSize = resource.transferSize / 1000
                     attributes.responseEnd = resource.responseEnd / 1000
@@ -64,7 +64,7 @@ function getResourceTimings() {
                     // collect some attributes to send to New Relic
                     // there's a lot more available but this is MVP
                     var attributes = {}
-                    attributes.name = resource.name
+                    attributes.resourceName = resource.name
                     attributes.resourceDuration = resource.duration / 1000
                     attributes.transferSize = resource.transferSize / 1000
                     attributes.responseEnd = resource.responseEnd / 1000
@@ -80,7 +80,7 @@ function getResourceTimings() {
                     // collect some attributes to send to New Relic
                     // there's a lot more available but this is MVP
                     var attributes = {}
-                    attributes.name = resource.name
+                    attributes.resourceName = resource.name
                     attributes.resourceDuration = resource.duration / 1000
                     attributes.transferSize = resource.transferSize / 1000
                     attributes.responseEnd = resource.responseEnd / 1000
