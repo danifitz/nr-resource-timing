@@ -101,7 +101,7 @@ function getAssetBudgets() {
       !("performance" in window) ||
       !("getEntriesByType" in window.performance) ||
       !(window.performance.getEntriesByType("resource") instanceof Array) ||
-      !(typeof newrelic === 'undefined')
+      (typeof newrelic == 'undefined')
     ) 
     {
       consoleLogger(logToConsole, "performance NOT supported by Browser" );
