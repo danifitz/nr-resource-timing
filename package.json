@@ -1,0 +1,32 @@
+{
+  "name": "nr-resource-timing",
+  "version": "1.0.0",
+  "description": "a set of scripts to measure resource timings and user perception metrics for real users and synthetic tests",
+  "main": "nr-resource-timing-snippet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danifitz/nr-resource-timing.git"
+  },
+  "keywords": [
+    "new",
+    "relic",
+    "real",
+    "user",
+    "monitoring",
+    "synthetic",
+    "monitoring",
+    "web",
+    "performance",
+    "user",
+    "perception"
+  ],
+  "author": "danielfitzgerald@newrelic.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danifitz/nr-resource-timing/issues"
+  },
+  "homepage": "https://github.com/danifitz/nr-resource-timing#readme"
+}
