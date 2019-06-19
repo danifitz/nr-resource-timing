@@ -2,9 +2,10 @@
   "name": "nr-resource-timing",
   "version": "1.0.0",
   "description": "a set of scripts to measure resource timings and user perception metrics for real users and synthetic tests",
-  "main": "nr-resource-timing-snippet.js",
+  "main": "pipeline.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node pipeline.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/danifitz/nr-resource-timing/issues"
   },
-  "homepage": "https://github.com/danifitz/nr-resource-timing#readme"
+  "homepage": "https://github.com/danifitz/nr-resource-timing#readme",
+  "devDependencies": {
+    "minify": "^4.1.1"
+  }
 }
